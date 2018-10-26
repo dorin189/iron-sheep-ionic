@@ -1,0 +1,38 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            Profile Page
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+    <ion-item>
+        <ion-label>First Name</ion-label>
+        <ion-input placeholder="Text Input" value="{{data.first_name}}" [(ngModel)]="data.first_name"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>Last Name</ion-label>
+        <ion-input placeholder="Text Input" value="{{data.last_name}}" [(ngModel)]="data.last_name"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>User Name</ion-label>
+        <ion-input placeholder="Text Input" value="{{data.user_name}}" [(ngModel)]="data.user_name"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>Email</ion-label>
+        <ion-input placeholder="Text Input" value="{{data.email}}" [(ngModel)]="data.email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>Password</ion-label>
+        <ion-input type="password" placeholder="Text Input" [(ngModel)]="data.password"></ion-input>
+    </ion-item>
+
+    <button ion-button full color="secondary" (click)="save(data)">Update</button>
+
+</ion-content>
